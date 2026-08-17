@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #fffaf4;
+  color: #403b3b;
+  font-family: "Yu Gothic", sans-serif;
+  line-height: 1.8;
+}
+
+header {
+  padding: 20px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background: #fffaf4;
+  border-bottom: 1px solid #eadfd4;
+  z-index: 10;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+nav a {
+  margin-left: 25px;
+  color: #403b3b;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 6%;
+}
+
+section {
+  padding: 90px 0;
+}
+
+.hero {
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero > p:first-child,
+.label {
+  color: #9b7d6d;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: 70px;
+  line-height: 1.1;
+  font-weight: normal;
+}
+
+h1 span {
+  text-decoration: underline;
+}
+
+h2 {
+  font-family: Georgia, serif;
+  font-size: 42px;
+  font-weight: normal;
+}
+
+.button,
+button {
+  display: inline-block;
+  padding: 10px 22px;
+  background: #403b3b;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.work {
+  padding: 15px;
+  background: white;
+  border: 1px solid #eadfd4;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.work:hover {
+  transform: translateY(-5px);
+}
+
+.picture {
+  height: 250px;
+  background: #ead8c8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Georgia, serif;
+  font-size: 25px;
+  color: #6b5950;
+}
+
+.work h3 {
+  margin-bottom: 0;
+}
+
+.work p {
+  margin-top: 3px;
+  font-size: 13px;
+  color: #8d7a70;
+}
+
+.needs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.needs div {
+  background: white;
+  padding: 20px;
+  border: 1px solid #eadfd4;
+}
+
+.message {
+  text-align: center;
+}
+
+#thanks {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+footer {
+  padding: 25px;
+  text-align: center;
+  background: #ead8c8;
+  font-size: 12px;
+}
+
+@media (max-width: 700px) {
+  nav a {
+    margin-left: 8px;
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  .gallery,
+  .needs {
+    grid-template-columns: 1fr;
+  }
+}

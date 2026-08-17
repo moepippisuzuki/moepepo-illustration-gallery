@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>もえぺぽ Illustration Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">もえぺぽ / Illustration</div>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#works">Works</a>
+    <a href="#needs">Needs</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero">
+  <p>ILLUSTRATION GALLERY</p>
+
+  <h1>
+    My little<br>
+    <span>Illustration</span> world.
+  </h1>
+
+  <p>
+    好きなものを、かわいく、楽しく。<br>
+    もえぺぽのイラスト作品を紹介します。
+  </p>
+
+  <a class="button" href="#works">
+    作品を見る ↓
+  </a>
+</section>
+
+<section id="about">
+
+  <p class="label">01 / ABOUT</p>
+
+  <h2>About me</h2>
+
+  <p>
+    イラストを描くことが好きです。<br>
+    キャラクターイラストや、説明用のイラスト、
+    季節感のある作品などを制作しています。
+  </p>
+
+</section>
+
+<section id="works">
+
+  <p class="label">02 / WORKS</p>
+
+  <h2>My illustrations</h2>
+
+  <p>
+    作品をクリックすると、作品についての説明を見ることができます。
+  </p>
+
+  <div class="gallery">
+
+    <div class="work" onclick="showWork('キャラクターイラスト', '複数のキャラクターを描いた作品です。それぞれの髪型や服装が分かりやすくなるように工夫しました。')">
+      <div class="picture">ILLUSTRATION 01</div>
+      <h3>キャラクターイラスト</h3>
+      <p>人物の表情や服装を意識した作品</p>
+    </div>
+
+    <div class="work" onclick="showWork('座り方イラスト', '机に向かって座っている人物を描いた作品です。椅子や机も入れて、人物の姿勢が分かりやすくなるようにしました。')">
+      <div class="picture">ILLUSTRATION 02</div>
+      <h3>座り方イラスト</h3>
+      <p>人物の姿勢を分かりやすく表現</p>
+    </div>
+
+    <div class="work" onclick="showWork('人物表現', '複数の人物の表情やポーズをまとめたイラストです。表情や向きを変えることで、それぞれの違いが出るようにしました。')">
+      <div class="picture">ILLUSTRATION 03</div>
+      <h3>人物表現</h3>
+      <p>表情とポーズの違いを表現</p>
+    </div>
+
+    <div class="work" onclick="showWork('ポーズ比較', '同じ人物でもポーズによって見え方が変わることを表した作品です。比較しやすいように2人を並べました。')">
+      <div class="picture">ILLUSTRATION 04</div>
+      <h3>ポーズ比較</h3>
+      <p>ポーズの違いが伝わる構成</p>
+    </div>
+
+    <div class="work" onclick="showWork('年賀状イラスト', '季節のイラストとして制作した年賀状です。和風の模様や小物を使って、華やかな雰囲気にしました。')">
+      <div class="picture">ILLUSTRATION 05</div>
+      <h3>年賀状イラスト</h3>
+      <p>和風のモチーフを使った作品</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="needs">
+
+  <p class="label">03 / FAMILY NEEDS</p>
+
+  <h2>家族のニーズに合わせた工夫</h2>
+
+  <p>
+    家族にも見てもらいやすいように、
+    作品の画像を大きく表示し、
+    難しい操作をしなくても内容が分かる
+    シンプルなサイトにしました。
+  </p>
+
+  <div class="needs">
+
+    <div>
+      <h3>見やすさ</h3>
+      <p>文字を大きくし、余白を多めにしました。</p>
+    </div>
+
+    <div>
+      <h3>分かりやすさ</h3>
+      <p>作品ごとに簡単な説明をつけました。</p>
+    </div>
+
+    <div>
+      <h3>使いやすさ</h3>
+      <p>作品をクリックするだけで詳細を見られます。</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="message">
+
+  <p class="label">04 / MESSAGE</p>
+
+  <h2>Thank you!</h2>
+
+  <p>
+    最後まで見てくださってありがとうございます。
+  </p>
+
+  <button onclick="sayThanks()">
+    クリックしてみる
+  </button>
+
+  <p id="thanks"></p>
+
+</section>
+
+</main>
+
+<footer>
+  © 2026 もえぺぽ / Illustration Gallery
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
